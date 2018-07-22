@@ -1,7 +1,5 @@
 # Semantic Data Augmentation
 
-Repository for the one of my PhD thesis project.
-
 In order to be able to use it, first download the entire repository.
 
 1. Create a db folder in the root directory.
