@@ -21,7 +21,7 @@ class Normalization(object):
 		normalized = " "
 		
 		# remove single-and-double quotes
-		sample = sample.replace("\"","\'")
+		sample = sample.replace("\"","\'").lower()
 		
 		if debug:
 			print("Sample:    ", sample)
@@ -40,10 +40,10 @@ class Normalization(object):
 				except KeyError:
 					token = token
 					
-			normalized = " ".join([normalized,token])
+			normalized = " ".join([normalized,token]).strip()
 			
 		if debug:
-			print("Normalized:", normalized.strip())
+			print("Normalized:", normalized)
 			print("-"*30)
 		
 		return normalized

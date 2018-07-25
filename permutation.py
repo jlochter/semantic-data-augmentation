@@ -252,7 +252,8 @@ class Permutation(object):
 		
 		if debug:
 			print(new_samples)
-			
+		
+		new_samples = [i.strip() for i in new_samples]
 		return new_samples
 		
 	def save_local_meanings(self):
